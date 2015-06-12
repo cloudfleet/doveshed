@@ -9,4 +9,6 @@ RUN mkdir /usr/src/app/queue && chown node:node /usr/src/app/queue
 
 USER node
 
+EXPOSE 1025
+
 CMD ./start.sh
