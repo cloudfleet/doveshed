@@ -7,6 +7,8 @@ RUN	groupadd -r node \
 
 RUN mkdir /usr/src/app/queue && chown node:node /usr/src/app/queue
 
+RUN chown -R node:node /usr/src/app
+
 USER node
 
 EXPOSE 1025
