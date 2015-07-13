@@ -8,7 +8,7 @@ cat > $WORKDIR/config/smtp_forward.ini <<EOF
 
 host=$CLOUDFLEET_MAIL_RELAY
 port=125
-enable_tls=1
+enable_tls=true
 
 auth_type=plain
 auth_user=$CLOUDFLEET_DOMAIN
