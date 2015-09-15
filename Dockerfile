@@ -7,8 +7,6 @@ RUN	groupadd -r node \
 
 RUN mkdir /usr/src/app/queue && chown -R node:node /usr/src/app
 
-USER node
-
-EXPOSE 1025
+EXPOSE 25
 WORKDIR /usr/src/app
 CMD ./start.sh
